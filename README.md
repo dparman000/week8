@@ -1,9 +1,3 @@
-# week8
-web security codepath class
-# Project 8 - Pentesting Live Targets
-
-# Project 8 - Pentesting Live Targets
-
 Time spent: **5** hours spent in total
 
 > Objective: Identify vulnerabilities in three different versions of the Globitek website: blue, green, and red.
@@ -38,36 +32,49 @@ Vulnerability #1:Insecure Direct Object Reference
 
 Vulnerability #2: Cross Site Request Forgery
 
-************************************
-Details:
-* Username Enumeration: Existence of Username can be determined on Green Target by monitoring
+
+## Details:
+## Username Enumeration: Existence of Username can be determined on Green Target by monitoring
 web response to login. 
 If username exists it uses class failure. 
 if username doesn't exist it uses class failed.
-![](https://i.imgur.com/hX4vlvu.gifv)
+<img src="https://i.imgur.com/hX4vlvu.gifv" width="800">
 
-* Insecure Direct Object Reference (IDOR):Salespersons can be viewed with id numberson Red Target.
+
+
+## Insecure Direct Object Reference (IDOR):Salespersons can be viewed with id numberson Red Target.
 By giving arbitrary number For example:id=10 user can see salesperson profile that is not public. 
-![](https://i.imgur.com/j9BGp61.gifv)
+<img src="https://i.imgur.com/j9BGp61.gifv" width="800">
 
-* SQL Injection (SQLi):SQL query can be inputed in Blue Target.
+
+
+
+## SQL Injection (SQLi):SQL query can be inputed in Blue Target.
 On Salespersons profile url adress SQL query can be inputed.
-For example:' OR 1=1 --'
-![](https://i.imgur.com/mGtVhYf.gifv)
+For example:' OR 1=1 --'.
+<img src="https://i.imgur.com/mGtVhYf.gifv" width="800">
 
-* Cross-Site Scripting (XSS):On Green Target XSS can be submitted by Contact Us Form.
+
+
+## Cross-Site Scripting (XSS):On Green Target XSS can be submitted by Contact Us Form.
 Script is trigered when logged in user goes to Feedback site.
-![](https://i.imgur.com/Jdf2WEm.gifv)
+<img src="https://i.imgur.com/Jdf2WEm.gifv" width="800">
 
-*Cross-Site Request Forgery (CSRF):Red Target is vulnerable to CSRF.
+
+
+## Cross-Site Request Forgery (CSRF):Red Target is vulnerable to CSRF.
 If logged in user opens malicious web site, malicious web site can change data on Red Target Web site.
 For example: Salespersons Firsname, Lastname, Phone Number,etc.
-![](https://i.imgur.com/wjuAdpg.gifv)
+<img src="https://i.imgur.com/wjuAdpg.gifv" width="800">
 
-* Session Hijacking/Fixation:Users Session can be hijacked on Blue Target.
+
+
+## Session Hijacking/Fixation:Users Session can be hijacked on Blue Target.
 Non priveleged user can hijack session and change its own session to priveleged user session id,
 and preform all the operations desired.
-![](https://i.imgur.com/cdighkM.gifv)
+<img src="https://i.imgur.com/cdighkM.gifv" width="800">
+
+
 
 ## Notes
 
